@@ -10,11 +10,8 @@ pipeline {
 
 
      environment {
-        withCredentials([<object of type com.cloudbees.jenkins.plugins.awscredentials.AmazonWebServicesCredentialsBinding>]) {
-    // some block
-}
+        creds=Credentials('satz')
     }
-
 
     stages {
         stage('checkout') {
