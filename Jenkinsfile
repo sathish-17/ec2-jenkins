@@ -18,7 +18,7 @@ pipeline {
             steps {
                  script{
                         
-                       git "https://github.com/sathish-17/ec2-jenkins.git"
+                       git clone "https://github.com/sathish-17/ec2-jenkins.git"
                        
                     }
                 }
