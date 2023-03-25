@@ -9,18 +9,17 @@ pipeline {
     }
 
 
-     environment {
-        creds=Credentials('satz')
-    }
+    environment {
+    AWS_CREDS = credentials('satz')
+        }
 
     stages {
         stage('checkout') {
             steps {
                  script{
-                        dir("terraform")
-                        {
-                            git "https://github.com/sathish-17/ec2-jenkins.git"
-                        }
+                        
+                       git "https://github.com/sathish-17/ec2-jenkins.git"
+                       
                     }
                 }
             }
