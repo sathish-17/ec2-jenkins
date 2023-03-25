@@ -47,9 +47,6 @@ pipeline {
                 }
            }
            
-                
-            
-
            steps {
                script {
                     def plan = readFile 'tfplan.txt'
