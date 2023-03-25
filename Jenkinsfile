@@ -33,7 +33,7 @@ pipeline {
             
             steps {
                 sh 'terraform init -input=false'
-                sh "terraform plan -out tfplan "
+                sh "terraform plan -var-file=terraform.tfvars -out tfplan "
                 sh 'terraform show -no-color tfplan > tfplan.txt'
             }
         }
