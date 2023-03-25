@@ -4,5 +4,6 @@ resource "aws_instance" "web" {
 
   tags = {
     Name = var.ec2_name
+    Environment = "DEv_update"
   }
 }
