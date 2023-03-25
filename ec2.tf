@@ -1,5 +1,5 @@
 resource "aws_instance" "web" {
-  ami           = "amzn2-ami-kernel-5.10-hvm-2.0.20230320.0-x86_64-gp2"
+  ami           = "ami-04581fbf744a7d11f"
   instance_type = var.instance_type
 
   tags = {
